@@ -59,11 +59,11 @@ const TweetList = () => {
      * fetch the search results for passed filter value
      */
     useEffect(() => {
-        const query = enteredFilter.length === 0 ? 'React' : enteredFilter;
-        axios.get(`http://localhost:5000/twitter`, {
+        const query = enteredFilter.length === 0 ? 'Angular' : enteredFilter;
+        axios.get(process.env.REACT_APP_BACKEND_URL, {
             params: {
                 searchQuery: query,
-                count: 5
+                count: 6
             },
         }).then((response) => {
             const responseItems = response.data.statuses;
