@@ -60,7 +60,7 @@ const TweetList = () => {
      */
     useEffect(() => {
         const query = enteredFilter.length === 0 ? 'React' : enteredFilter;
-        axios.get(process.env.REACT_APP_BACKEND_API, {
+        axios.get(`http://localhost:5000/twitter`, {
             params: {
                 searchQuery: query,
                 count: 5

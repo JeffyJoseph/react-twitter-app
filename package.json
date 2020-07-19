@@ -17,7 +17,7 @@
     "twit": "^2.2.11"
   },
   "scripts": {
-    "start": "node server.js",
+    "start": "react-scripts start",
     "build": "node server.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -37,5 +37,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "I have used Twit to get through the authentication. For the access key and consumer keys I used my personal tokens and hence have not included those in here(.env) as it exposes my credentials. However, to make it easier for you I have attched the .env file to replace if the hosted url doesn't work. I just created developer twitter account only for this project and as a matter of safety, i will delete the account once code is reviewed and processes are done.",
+  "main": "server.js",
+  "devDependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
